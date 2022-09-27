@@ -1,11 +1,12 @@
 html, body {
     height: 100%;
-    margin: 0;
+    margin:0;
     text-align: center;
-
   }
+
 .wrapper {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -14,61 +15,83 @@ html, body {
   display: block;
   background: white;
   }
-  
-.footer {
-  }
 
 .profile {
   display: block;
- 	margin: 20px;
-  width: 40%;
+  position: absolute top;
+  }
+
+.profile img {
+  margin: 20px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color:rgb(137, 137, 232);
-  }
+}
 
 .content {
   display: block;
   background: gray;
-  overflow:scroll;
+  overflow:auto;
   }
 
 .section {
   display: block;
-  width: 80%;
-  height: 90%;
-  overflow: auto;
+  width: 70%;
+  height: auto;
+  overflow:auto;
   background-color: white;
-  margin: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.gallery img {
+  width:300px;
+  height: 300px;
 }
 
   h1 {
-    text-align: center;
     color:rgb(137, 137, 232);
+    font-size: larger;
  }
 
   h2 {
-    text-align: center;
     color:gray;
+    font-size: large;
+  }
+
+  h3 {
     font-size: medium;
   }
 
   p {
-    text-align: center;
   }
 
   nav {
-    text-align: center;
     text-decoration: none;
     padding:0;
     transition-timing-function: color 3s ease-out;
     display: inline;
     }
-      nav a{color:#92ABE2;
+    nav a{color:#92ABE2;
     }
-      nav a:hover{color:#382E89;
+    nav a:hover{color:#382E89;
     }
+
+
 
   
   @media (min-width:1024px) {
