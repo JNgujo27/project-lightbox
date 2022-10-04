@@ -11,19 +11,22 @@
 <div class="wrapper">
 <body>
     <div class="header">
-        <img src= " LIGHTBOXLOGO.png"> <p> LIGHTBOX</p>
+      <img src="Asset 1.png" width="50" alt="lightbox logo">
+      <h1> LIGHTBOX</h1>
     </div>
 
-<h2>Login Form</h2>
+<div class="content">
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <h2>LIGHTBOX: Shared Space for ASU Inspiration</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign</button>
 
 <div id="id01" class="login">
   
   <form class="login-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-      <img src="img_avatar.png" alt="Avatar" class="avatar">
+      <img src="Asset 1.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -33,21 +36,21 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button type="submit">Sign Up</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div class="container" style="background-color:lavender">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
 </div>
 
-
-    <div class="footer">
+</div>
+<div class="footer">
     <p> PLACE INFORMATION AT THE BOTTOM AND RESOURCES</p>
 </div>
 
