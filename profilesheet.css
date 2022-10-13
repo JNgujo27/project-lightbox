@@ -50,11 +50,12 @@ html, body {
 .gallery {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-rows: repeat(6,1fr);
   grid-gap: 10px;
   justify-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  overflow: scroll;
 
 }
 
@@ -104,11 +105,18 @@ html, body {
       padding-left:1em;
     }
 
-    #wrapper {margin:auto:
+    .wrapper {margin:auto:
       width:80%;
       display:grid;
       grid-template-columns:180px auto;
       grid-template-rows: auto;
+    }
+  }
+
+  @media (max-width:1024px) {
+    .gallery img{
+      width: 150px;
+      height: 150px;
     }
   }
     
