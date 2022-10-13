@@ -17,9 +17,29 @@
 
 <div class="content">
 
-  <h2>LIGHTBOX: Shared Space for ASU Inspiration</h2>
+<div class="loginbox">
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign</button>
+    <form >
+      <div class="imgcontainer">
+        <img src="Asset 1.png" alt="Avatar" class="avatar">
+      </div>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Sign Up</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</button>
+    
+    </form>
+  </div>
+  <h2>LIGHTBOX: Shared Space for ASU Inspiration</h2>
 
 <div id="id01" class="login">
   
@@ -50,9 +70,7 @@
 </div>
 
 </div>
-<div class="footer">
-    <p> PLACE INFORMATION AT THE BOTTOM AND RESOURCES</p>
-</div>
+
 
 <script>
 var modal = document.getElementById('id01');
@@ -66,4 +84,7 @@ window.onclick = function(event) {
 
 </body>
 </div>
+<footer>
+    <p> PLACE INFORMATION AT THE BOTTOM AND RESOURCES</p>
+</footer>
 </html>
